@@ -1,0 +1,344 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding:0px;
+    background-color: #161616;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    
+}
+#logo img{
+    border-radius: 8px;
+    width: 100px;
+   
+    
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #edf1fd;
+    position: relative;
+    background-image: url("background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: calibri;
+    position: fixed;
+    top:0;
+    left:0;
+  width: 100%;
+  box-sizing: border-box;
+  background: #f4f7ff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    padding:10px 15px ;
+    color: #6c707c;
+    font-size: 12px;
+}
+.menu li a:hover{
+    border-radius: 5%;
+    background-color: #292929;
+    color: #FFFFFF !important;
+    font-weight: 700;
+    transition: ALL EASE 0.4S;
+    
+}
+
+.name{
+    font-family: calibri;
+    width: 500px;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    transform: translate(-20%,-50%,);
+}
+.name p:nth-child(1),
+.name .details{
+    color: #6c707c;
+    font-size: 16px;
+}
+.name h1 {
+    font-family:poppins;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing:3px;
+    color:#292929;
+}
+.button {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    color: #FFFFFF;
+}
+.button:hover{
+    background-color: #131313;
+    transition: all ease 0.5s;
+
+}
+#about{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:50px 5% 0px 5%;
+
+}
+.about-text{
+    font-family: calibri;
+    width: 50%;
+}
+.about-text h1{
+    margin: 0;
+    padding: 0px;
+    font-size: 5rem;
+    color: #17d1ac;
+
+}
+.foto img{
+    width: 350px;
+}
+.about-text p{
+    font-size: 1.2rem;
+    color: rgba(251,251, 251,1.00);
+}
+#services{
+    width: 100%;
+    height: 100vh;
+    font-family:calibri;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.s-heading h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+}
+.s-heading p{
+    color: rgba(249, 249, 249, 1.00);
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+}
+.s-heading{
+    text-align: center;
+    margin: 20px 0px;
+}
+.s-box{
+    background-color: #2b2b2b;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1 );
+}
+.s-b-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.s-b-img{
+    width: 100%;
+    height: 70%;
+}
+.s-b-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#portofolio{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 2% 20px 2%;
+}
+.p-box{
+    background-color:#1f1f1f ;
+overflow: hidden;
+border-radius: 10PX;
+box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.3);
+position: relative;
+
+}
+.p-b-container{
+    width:90%;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    padding-left:50px ;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-gap: 10px;
+    padding-bottom: 100px;
+}
+.cp-container{
+   background-image: url("bacground.jpg");
+   box-sizing: border-box;
+   background-attachment: fixed;
+   background-position: bottom;
+   
+   margin-top: 30px;
+ padding-bottom: 40px;
+ background-size: 0px 20px 20px 20pz;
+    color: whitesmoke;
+
+}
+#copyright{
+    padding: 0;
+margin: 0;
+    position: relative;
+}
+.cp-container{
+    
+    position: relative;
+   
+    color: black;
+}
+.cp2-container{
+    position: relative;
+    margin-top: 120px;
+}
+@media(max-width:1190px){
+    #main{
+        background-size: 1150px;
+    }
+    .name{
+        left: 10%;
+        top: 26%;
+        transform: translate(-10%,-50%);
+    }
+    .about-model img{
+        height: 400px;
+    }
+    #services{
+        height: auto;
+    }
+    .s-b-container{
+        flex-wrap: wrap;
+    }
+    .s-box{
+
+        flex-grow: 1;
+    }
+    .s-b-text{
+        text-align: center;
+    }
+}
+@media(max-width: 970px){
+    #main{
+        padding-left: 30px;
+        background-image: none !important;
+      
+    }
+    .name{
+        width: 90%;
+        justify-content: center;
+      left: 50%;
+        top: 50%;
+        transform:translate(-50%,-50%);
+    
+
+    }
+    .about-model{
+        display: none;
+    }
+    #about{
+    padding-left: 50px;
+        justify-content: center;
+        padding-top: 100px;
+    }
+    .about-text{
+        width: 90%;
+    }
+    .about-text h1{
+        font-size: 4rem;
+    }
+    .p-b-container{
+        width: 90%;
+    }
+}
+@media(max-width:900px){
+    .name{
+
+      
+    }
+    #main{
+  padding-right:60px ;
+        background-image: none !important;
+      
+    }
+    .p-b-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        
+    }
+    #copyright{
+      
+background-attachment: fixed;
+width: 100%;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    #logo img{
+        height: 50px;
+        width: 50px;
+    }
+   
+}
+@media(max-width:600px){
+   #main{
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+   }
+    .p-b-container{
+      padding-right: 40px;
+    }
+    .cp-container{
+        background-image: none;
+        background: none !important;
+        color: cornsilk !important;
+    }
+    .cp-container font{
+        color: cornsilk;
+
+    }
+    .p-box a img{
+        height: 150px;
+        width: 150px;
+    }
+}
